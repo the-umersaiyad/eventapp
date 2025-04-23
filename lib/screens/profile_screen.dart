@@ -20,13 +20,13 @@ class ProfileScreen extends StatelessWidget {
               CircleAvatar(
                   radius: 60, backgroundImage: AssetImage('assets/image.png')),
               SizedBox(height: 10),
-              Text('John Doe',
+              Text('Vikram ',
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                       color: Colors.black87)),
               SizedBox(height: 5),
-              Text('user@example.com',
+              Text('vikrmasingh@gmail.com',
                   style: TextStyle(fontSize: 16, color: Colors.grey)),
               SizedBox(height: 20),
               ListTile(
@@ -35,7 +35,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               ListTile(
                 leading: Icon(Icons.location_on, color: Colors.redAccent),
-                title: Text('New York, USA'),
+                title: Text('UTU '),
               ),
               SizedBox(height: 20),
               ElevatedButton(

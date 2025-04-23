@@ -10,16 +10,15 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
 
-  String? _email;  // Nullable variables for storing input values
+  String? _email; 
   String? _password;
 
-  // Static credentials
-  final String correctEmail = "user@example.com";
+  final String correctEmail = "vikram12@gmail.com";
   final String correctPassword = "Password@123";
 
   void _login() {
     if (_formKey.currentState!.validate()) {
-      _formKey.currentState!.save(); // Saves form values to variables
+      _formKey.currentState!.save();
 
       if (_email == correctEmail && _password == correctPassword) {
         Fluttertoast.showToast(msg: "Login Successful!");
@@ -66,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     }
                     return null;
                   },
-                  onSaved: (value) => _email = value,  // Save input value
+                  onSaved: (value) => _email = value,  
                 ),
                 SizedBox(height: 10),
 
@@ -84,7 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     }
                     return null;
                   },
-                  onSaved: (value) => _password = value,  // Save input value
+                  onSaved: (value) => _password = value,  
                 ),
                 SizedBox(height: 20),
 
